@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isma Store - Jual Beli Akun Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0f0f1a;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar {
+      background: linear-gradient(90deg, #1a1a2e, #16213e);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #48c6ef !important;
+    }
+    .hero {
+      background: url('https://img.freepik.com/free-vector/gradient-abstract-background-design_23-2149091771.jpg') center/cover no-repeat;
+      padding: 120px 20px;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .hero h1 span { color: #48c6ef; }
+    .btn-purple {
+      background: linear-gradient(45deg, #9b51e0, #48c6ef);
+      color: #fff;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn-purple:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+    .stat-box {
+      background-color: #1f1f2f;
+      border-radius: 12px;
+      padding: 20px;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+    .stat-box:hover {
+      background-color: #292943;
+      transform: scale(1.05);
+    }
+    .card {
+      background-color: #1c1c2c;
+      border: none;
+      border-radius: 15px;
+      color: #fff;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    footer {
+      background: #1a1a2e;
+      padding: 20px;
+      text-align: center;
+      color: #aaa;
+      margin-top: 40px;
+    }
+    footer a { color: #48c6ef; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Isma Store</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        ☰
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#hero" class="nav-link text-white">Beranda</a></li>
+          <li class="nav-item"><a href="#kategori" class="nav-link text-white">Kategori</a></li>
+          <li class="nav-item"><a href="#tentang" class="nav-link text-white">Tentang</a></li>
+          <li class="nav-item"><a href="#kontak" class="nav-link text-white">Kontak</a></li>
+        </ul>
+        <a href="#masuk" class="btn btn-sm btn-purple ms-3">Masuk</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h1><strong>Isma Store</strong> - Jual Beli Akun Game <span>Terpercaya</span></h1>
+      <p class="lead">Dapatkan akun game impian Anda dengan rank tinggi, skin langka, dan harga terbaik. Transaksi aman & terjamin!</p>
+      <a href="#kategori" class="btn btn-purple btn-lg m-2">Lihat Koleksi</a>
+      <a href="#cara" class="btn btn-outline-light btn-lg m-2">Cara Pembelian</a>
+    </div>
+  </section>
+
+  <!-- Statistik -->
+  <section class="py-5">
+    <div class="container text-center">
+      <div class="row g-4">
+        <div class="col-md-3"><div class="stat-box">1000+<br>Transaksi Sukses</div></div>
+        <div class="col-md-3"><div class="stat-box">50+<br>Game Tersedia</div></div>
+        <div class="col-md-3"><div class="stat-box">5000+<br>Customer Puas</div></div>
+        <div class="col-md-3"><div class="stat-box">4.9⭐<br>Rating</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kategori Game -->
+  <section id="kategori" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Kategori Game</h2>
+      <div class="text-center mb-4">
+        <button class="btn btn-purple btn-sm filter-btn" data-filter="all">Semua</button>
+        <button class="btn btn-outline-light btn-sm filter-btn" data-filter="ml">Mobile Legends</button>
+        <button class="btn btn-outline-light btn-sm filter-btn" data-filter="ff">Free Fire</button>
+      </div>
+      <div class="row g-4" id="product-list">
+        <!-- Card ML -->
+        <div class="col-md-4 product-item ml">
+          <div class="card p-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRASLvgXXK76HC84Q2eLU6pC303MbbR222-J79-eOgNtLo6TG05f5Q6ZOw1&s=10" class="card-img-top rounded" alt="Mobile Legends">
+            <div class="card-body">
+              <h5 class="card-title">Mobile Legends</h5>
+              <p class="card-text">Rank: Mythical<br>Heroes: 125</p>
+              <h6>Rp 100.000-800.000</h6>
+              <a href="#beli" class="btn btn-purple w-100">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card FF -->
+        <div class="col-md-4 product-item ff">
+          <div class="card p-3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxWkdoMHLv6UMK3iPu-uUwuASiUcqJVmMjrL4WoYzjRKH2mE8hhRqNIb5F&s=10" class="card-img-top rounded" alt="Free Fire">
+            <div class="card-body">
+              <h5 class="card-title">Free Fire</h5>
+              <p class="card-text">Rank: Heroik<br>Level: 70</p>
+              <h6>Rp 150.000-800.000</h6>
+              <a href="#beli" class="btn btn-purple w-100">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Apa Kata Pelanggan</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <p>"Akun original dan aman, transaksi cepat!"</p>
+            <strong>All fake1</strong> - Mobile Legends
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <p>"Pelayanan ramah, harga masuk akal."</p>
+            <strong>All fake2</strong> - Free Fire
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <p>"Saya puas, akun sesuai deskripsi dan support mantap."</p>
+            <strong>All fake3</strong> - Mobile Legends
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak">
+    <p>&copy; 2025 Isma Store. Semua Hak Dilindungi.</p>
+    <p>Hubungi kami: <a href="tel:085730750941">085730750941</a></p>
+    <p>Email: <a href="mailto:bakricore7@gmail.com">bakricore7@gmail.com</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Filter produk berdasarkan kategori
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", function() {
+        let filter = this.dataset.filter;
+        document.querySelectorAll(".product-item").forEach(item => {
+          item.style.display = (filter === "all" || item.classList.contains(filter)) ? "block" : "none";
+        });
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))?.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+</html>
